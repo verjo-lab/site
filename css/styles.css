@@ -1,0 +1,397 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Tahoma, Arial, serifSansSerifMonospace;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #333333;
+	background-image: url(../images/stripe-bg.png);/*background-color: #FFFFFF;*/
+	background-attachment: fixed;
+}
+/* Links */
+
+a {
+	outline: none;
+	color: #333399;
+	cursor: pointer;
+}
+a img {
+	border: none;
+}
+a:link, a:active, a:visited, a:hover {
+	text-decoration: none;
+}
+a:visited {
+	color: #663333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0099FF;
+}
+/* Divs */
+
+div {
+	position: relative;
+}
+#general {
+	margin: 0px auto;
+	padding: 0px;
+	width: 1024px;
+	position: static;
+	background-color: #FFFFFF;
+	border-left: 1px #999 solid;
+	border-right: 1px #999 solid;
+}
+#top {
+	width: 819px;
+	height: 70px;
+	margin: 0px 0px 0px 205px;
+	background: url(../images/logo-background.jpg) no-repeat;
+}
+#picture {
+	width: inherit;
+	height: 250px;
+	padding: 0px;
+	margin: 0px 0px 5px 0px;
+	background-repeat: no-repeat;
+}
+.container {
+	width: 989px;
+	min-height: 380px;
+	background: inherit;
+	padding: 0px 15px 0px 10px;
+}
+#address-bar {
+	width: 215px;
+	float: right;
+	height: auto;
+	padding: 40px 0px 0px 15px;
+}
+#contents-panel {
+	width: 500px;
+	height: auto;
+	float: left;
+	padding: 5px 25px 15px 0px;
+}
+.description {
+	width: 250px;
+	margin: 0px 20px 50px 0px;
+	float: left;
+}
+.links, .links-bar {
+	width: 150px;
+}
+.links-bar {
+	margin: 0px 30px 30px 0px;
+	position: absolute;
+	height: auto;
+}
+.links {
+	height: auto;
+	display: inline;
+	float: left;
+	position: relative;
+}
+.links ul, .description ul, .links-bar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.links li, .description li, .links-bar li {
+	display: block;
+	min-height: 25px;
+	height: auto !important;
+	width: auto;
+	border-bottom: #609 dashed 1px;
+	line-height: 25px;
+	padding: 0px 0px 0px 10px;
+	font-size: 12px;
+}
+.links li a, .links-bar li a {
+	color: #003;
+}
+.lang {
+	width: 162px;
+	height: 45px;
+	position: absolute;
+	left: 585px;
+	top: 47px;
+	z-index: 2;
+	border: 1px solid #999;
+}
+.gallery {
+	width: 165px;
+	height: 55px;
+	position: absolute;
+	left: 585px;
+	top: 95px;
+	z-index: 3;
+}
+.row {
+	width: 770px;
+	float: left;
+}
+.visit-card {
+	float: left;
+	margin: 20px 25px 20px 0px;
+	padding: 10px 0px 0px 10px;
+	width: 220px;
+	border-left: 1px #999 dotted;
+}
+.visit-card ul {
+	display: block;
+	padding: 10px 0px 20px 0px;
+	list-style: none;
+}
+.visit-card li {
+	padding: 2px 5px 2px 5px;
+}
+.frame {
+	float: left;
+	width: 560px;
+	border-bottom: 1px #999 dotted;
+	padding: 35px 0px 0px 0px;
+}
+.frame iframe {
+	height: 220px;
+	width: 100%;
+}
+#footer {
+	height: 45px;
+	width: 969px;
+	background: #F4F4F4;
+	text-align: right;
+	padding: 10px 25px 50px 30px;
+}
+#footer p {
+	padding: 10px 0px 0px 0px;
+}
+/* Fonts */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #030;
+	font-weight: normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 10px 0px 15px 0px;
+}
+h1 {
+	font-size: 48px;
+	line-height: 50px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 26px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 24px;
+}
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+}
+h5 {
+	font-size: 16px;
+	line-height: 18px;
+}
+h6 {
+	font-size: 14px;
+	line-height: 16px;
+}
+/* Images */
+
+img {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.img-toolbar {
+	float: right;
+	position: absolute;
+	left: 563px;
+	z-index: 1;
+}
+#img-mainpic {
+	margin: 15px 0px 0px 0px;
+}
+.img-staff, .img-staff-unhide, .img-staff-small {
+	padding: 5px;
+	border: 1px #999 solid;
+}
+.img-staff {
+	margin: 0px 25px 0px 0px;
+}
+.img-staff-unhide {
+	margin: 0px 35px 30px 0px;
+	float: left;
+}
+.img-staff-small {
+	float: none;
+	margin: 0px 25px 10px 0px;
+}
+.img-google {
+	position: absolute;
+	left: 165px;
+	z-index: 4;
+}
+.grayscale img {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+}
+.grayscale img:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+}
+/* Aditional */
+
+.alignment-left {
+	display: block;
+	float: left;
+	text-align: left;
+}
+.alignment-right {
+	display: block;
+	float: right;
+	text-align: right;
+}
+.alignment-center {
+	text-align: center;
+}
+.no-float {
+	float: none;
+	margin: 10px 20px 0px 0px;
+}
+.ul-0 {
+	list-style: none;
+	margin: 0px 0px 0px 20px;
+}
+.ul-1 {
+	list-style: disc;
+	margin: 0px 0px 0px 20px;
+}
+.ul-2 {
+	list-style: circle;
+	margin: 0px 0px 0px 45px;
+}
+.ul-3 {
+	list-style: none;
+	margin: 0px 0px 0px 180px;
+	padding: 10px 0px 0px 0px;
+	display: block;
+	width: 200px;
+}
+.ul-4 {
+	list-style: none;
+	margin: 20px 0px 0px 0px;
+}
+.ul-4 li {
+	padding: 2px 5px 2px 5px;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.bold-italic {
+	font-weight: bold;
+	font-style: italic;
+}
+.hidden {
+	visibility: hidden;
+}
+.text-journal, .text-no-margin, .text-margin-0, .text-margin, .text-margin-1, .text-margin-2, .column-0, .column-1, .column-2-3 {
+	display: block;
+	float: left;
+}
+.text-no-margin {
+	margin: 0px;
+	width: 525px;
+	padding: 20px 0px 0px 0px;
+}
+.text-no-margin p {
+	padding: 35px 0px 0px 0px;
+}
+.text-no-margin img {
+	border: none;
+}
+.text-margin-0 {
+	width: 560px;
+	padding: 20px 0px 25px 0px;
+	margin: 0px 0px 0px 205px;
+}
+.text-margin {
+	width: 784px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 205px;
+}
+.text-margin-1 {
+	width: 290px;
+	margin: 0px 0px 0px 205px;
+	padding: 30px 0px 0px 10px;
+}
+.text-margin-2 {
+	width: 240px;
+	margin: 0px 0px 0px 0px;
+	padding: 30px 0px 0px 20px;
+}
+.text-margin-3 {
+	width: 300px;
+	margin: 0px 0px 0px 205px;
+	padding: 5px 0px 0px 0px;
+	float: none;
+}
+.column-0, .column-1 {
+	margin: 0px 0px 0px 205px;
+}
+.column-0 {
+	padding: 20px 0px 0px 0px;
+	width: 180px;
+}
+.column-1 {
+	padding: 5px 0px 0px 10px;
+	width: 240px;
+}
+.column-2-3 {
+	padding: 5px 0px 0px 20px;
+	width: 240px;
+}
+.li-used {
+	color: #000000;
+	background-color: #CDC6E5;
+}
+.li-top {
+	border-top: #609 dashed 1px;
+}
+.li-colored {
+	background: #F4F4F4;
+}
+.superscript {
+	vertical-align: super;
+}
+.subscript {
+	vertical-align: sub;
+}
+.text-journal {
+	width: 360px;
+	padding: 0px 0px 0px 0px;
+}
+.cards {
+	background: none;
+	padding: 0px 0px 20px 5px;
+}
